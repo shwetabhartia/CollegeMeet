@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>Software Test Plan Template</title>
+  <meta content="Default User" name="author">
+</head>
+<h1 style="text-align: center;">&lt;College Meet&gt;<br>
+</h1>
+<h1 style="text-align: center;">Software Test Plan<br>
+</h1>
+<h2 style="text-align: center;">CSCI-P465/565 (Software Engineering I)</h2>
+<h2 style="text-align: center;"><span
+ style="text-decoration: underline;">Project Team</span></h2>
+<h3 style="text-align: center;">&lt;Karanpaul Multani&gt;</h3>
+<h3 style="text-align: center;">&lt;Shweta Bhartia&gt;</h3>
+<h3 style="text-align: center;">&lt;Scott Mathews&gt;</h3>
+<h3 style="text-align: center;">&lt;Yuanzhi Bao&gt;</h3>
+<hr style="width: 100%; height: 2px;"><br>
+<h2>1. Overview</h2>
+In this project we use Jest to test our project. Jest is used by Facebook to test all JavaScript code including React applications. One of Jest's philosophies is to provide an integrated ?zero-configuration? experience.
+<br>
+<h3 style="margin-left: 40px;">1.1 Test Objectives</h3>
+<div style="margin-left: 40px;">We use Jest to test whether is function as we want it to be. And have the react functions we expect.
+  &nbsp; <br>
+  <h3>1.2 Test Environment</h3>
+We use our local machine and running on windows 10, Linux redhat, and MacOS to test the code.
+Running our website on our school's server silo. Using ssh key to log into our silo account and set up the test environment.
+  Networking between all the machines in the beginning is just running on our local machine. <br>We had our local database set up and connect the local database with
+  the website. Later we have our server set up which is silo. We push the website to the server run it from there.
+ Support software packages are node.js, bootstramp. react-redux framework. Django framework need to be
+installed. We have the test environment on our local machine for now, will transfer from local machine to server. With local machine we have more conveniency. With remote server it has the possibility crash.
+<br>
+<h3>1.3 Test Personnel</h3>
+  Scott and Yuanzhi are testingh for the front end part.
+  Both will responsible for creating react-redux front end test.
+  Karanpaul and Shweta are testingh for the back end part.
+  Both will responsible for creating user cases and data to test the website.
+  <br>
+  We will have our user involvement more and more along with our project developing.
+  <br>
+<h3>1.4 Acceptance Criteria</h3>
+  WIth a fully functional website with all the important features be correctly implemented such as
+  Login, User home page, topic page, search for users, topics, private chat feature,
+  and with the percentage of less than 1% errors, We will consider our website could be deliverable.
+<br>
+<h3>1.5 Noted Omissions</h3>
+  Whether the user home page is structured as we wanted should not verified by this test.
+  The reason is that during this sprint we only need the basic three pages to be connected. And have the basic structure for it.<br>
+<br>
+</div>
+<h2>2. Test Cases </h2>
+<head>Test Cases Table</head>
+<table border="1">
+  <tr>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Initial Conditions</th>
+    <th>Input Data</th>
+    <th>Procedure</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Small Device Display</td>
+    <td>zoom in the home page and make sure everything on that page is functioning alright</td>
+    <td>Home page is on, no other test case should be implement prior this one</td>
+    <td>Mouse and touch pad and two fingers</td>
+    <td>http://silo.cs.indiana.edu:48170</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Large Device Display</td>
+    <td>zoom out the home page and make sure everything on that page is functioning alright</td>
+    <td>Home page is on, no other test case should be implement prior this one</td>
+    <td>Mouse and touch pad and two fingers</td>
+    <td>http://silo.cs.indiana.edu:48170</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Automated Component Testing</td>
+    <td>Automatically generate each component with testing suite, and see if output is produced</td>
+    <td>None</td>
+    <td>None</td>
+    <td>npm run test</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Automated Reducer Testing</td>
+    <td>Dispatch each type of action creator to store and verify that store is updated correctly</td>
+    <td>Reducers and action creators must be created before testing</td>
+    <td>Create dummy data to feed into reducers</td>
+    <td>npm run test</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Automated Server API Testing</td>
+    <td>Make call to each API endpoint and verify that the correct response is received</td>
+    <td>API endpoints mus be created</td>
+    <td>Create template requests, and feed dummy data into them</td>
+    <td>Run tests on client, observe responses, and observe state of server after testing</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Database Verification</td>
+    <td>For each update or deletion of data, verify that data is removed in all appropriate tables</td>
+    <td>Database tables must be created</td>
+    <td>Dummy data for inserting and updating and deleting from tables</td>
+    <td>Run tests on client, observe responses, and observe state of server after testing</td>
+  </tr>
+
+</table>
+
+<br>
+<br>
+<h2>Revision History</h2>
+<br>
+<table style="width: 100%; text-align: left;" border="1" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <th style="vertical-align: top;">Revision</th>
+      <th style="vertical-align: top;">Date<br>
+      </th>
+      <th style="vertical-align: top;">Change Description<br>
+      </th>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+        1<br>
+      </td>
+      <td style="vertical-align: top;">
+        19/02/2017<br>
+      </td>
+      <td style="vertical-align: top;">
+        Initial revision. Added tests 1-6<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<big><big><br>
+</big></big>
+<hr style="width: 100%; height: 2px;">
+<div style="text-align: center;"><span style="font-weight: bold;">Page
+Author/Creator:</span> <a
+ href="http://homes.soic.indiana.edu/aabhutta/">Adeel Bhutta</a><span
+ style="font-weight: bold;"><br>
+Last Modified:</span> 8/23/2016</div>
+<br>
+</body>
+</html>

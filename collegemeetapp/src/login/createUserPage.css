@@ -1,0 +1,7 @@
+#createUserJumbo {
+    margin: 0 auto;
+    width: 25%;
+
+    outline-style: outset;
+    text-align: center;
+}

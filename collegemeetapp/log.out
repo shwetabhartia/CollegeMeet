@@ -1,0 +1,64 @@
+nohup: ignoring input
+
+> collegemeet@0.1.0 start /nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp
+> react-scripts start
+
+Starting the development server...
+
+Compiled with warnings.
+
+Warning in ./src/App.js
+
+/nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp/src/App.js
+  3:8   warning  'UserPage' is defined but never used   no-unused-vars
+  4:8   warning  'TopicPage' is defined but never used  no-unused-vars
+  6:10  warning  'UPData' is defined but never used     no-unused-vars
+  6:18  warning  'TPData' is defined but never used     no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+Warning in ./src/Root.js
+
+/nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp/src/Root.js
+  2:10  warning  'Link' is defined but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+Warning in ./src/login/LoginPage.js
+
+/nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp/src/login/LoginPage.js
+  1:17  warning  'Component' is defined but never used     no-unused-vars
+  2:74  warning  'ControlLabel' is defined but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+Warning in ./src/user/Post.js
+
+/nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp/src/user/Post.js
+  2:10  warning  'Image' is defined but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+Warning in ./src/topic/Post.js
+
+/nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp/src/topic/Post.js
+  2:10  warning  'Image' is defined but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+Warning in ./src/user/Topic.js
+
+/nfs/nfs7/home/scomathe/work/classes/P565_Spring2017/collegemeetapp/src/user/Topic.js
+  2:10  warning  'Image' is defined but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+You may use special comments to disable some warnings.
+Use // eslint-disable-next-line to ignore the next line.
+Use /* eslint-disable */ to ignore all warnings in a file.

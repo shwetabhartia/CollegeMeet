@@ -1,0 +1,13 @@
+#topics {
+    float: right;
+    width: 50%;
+}
+
+#summary {
+    float: left;
+    width: 50%;
+}
+
+#title {
+    text-align: center;
+}

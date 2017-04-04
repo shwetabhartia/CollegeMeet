@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form class="form-horizontal" method="post" action="{% url 'complete:create_post' %}">
+	{% csrf_token %}
+	{{ form|crispy }}
+	<select id="topic_selected">
+	{% if topics %}
+		{% for topic in topics %}
+		<option value={{topic.id}}>{{topic.name}}</option>
+		{% endfor %}
+	{% else %}
+		<option value="1">N/A</option>
+	{% endif %}
+	<select>
+	<div class="control-group">
+	  <div class="controls">
+	    <button type="submit" class="btn">Submit</button>
+	  </div>
+	</div>
+</form>
+{% endblock %}
